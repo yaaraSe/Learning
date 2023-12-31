@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import Cards from './Components/Cards/Cards';
+import InfiniteScroll_Example from './Components/Cards/InfiniteScroll_Example';
 // import GoalServices from '@Components/GoalServices/GoalServices';
 // import ProtectRoute from '@CommonComponents/ProtectRoute/ProtectRoute';
 // import GoalsContainer from '@Components/GoalServices/GoalsContainer/GoalsContainer';
@@ -30,7 +30,7 @@ const App = () => {
         <Route
           path='/'
           element={
-            <Cards/>
+            <InfiniteScroll_Example />
             // <ProtectRoute>
             //   <GoalServices />
             // </ProtectRoute>
