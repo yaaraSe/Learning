@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
-import InfiniteScroll_Example from './Components/Cards/InfiniteScroll_Example';
-import Search_Item from './Components/Cards/Search_Item';
+import InfiniteScroll_Example from './Components/InfiniteScrollingTypes/InfiniteScroll_Example';
+import InfiniteScroll_Items from './Components/InfiniteScrollingTypes/InfiniteScroll_Items';
 // import GoalServices from '@Components/GoalServices/GoalServices';
 // import ProtectRoute from '@CommonComponents/ProtectRoute/ProtectRoute';
 // import GoalsContainer from '@Components/GoalServices/GoalsContainer/GoalsContainer';
@@ -43,7 +43,7 @@ const App = () => {
           <Route path='Assignment?' element={<CreateUpdateAssignment />} />
           <Route path='Assignment/:assignmentId' element={<CreateUpdateAssignment />} /> */}
         </Route>
-        // <Route path='Search_Item' element={<Search_Item />} />
+        // <Route path='InfiniteScroll_Items' element={<InfiniteScroll_Items />} />
         {/* <Route
           path='/Administrator'
           element={
