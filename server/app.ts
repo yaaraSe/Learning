@@ -3,13 +3,14 @@ import morgan from 'morgan';
 import rateLimit from 'express-rate-limit';
 import helmet from 'helmet';
 import mongoSanitize from 'express-mongo-sanitize';
-
 import hpp from 'hpp';
 import cookieParser from 'cookie-parser';
 import compression from 'compression';
 import cors from 'cors';
 import csrf from 'csurf';
 import dotenv from 'dotenv';
+// import xss from 'xss-clean';
+
 // import AppError from '@utils/appError';
 // import { loginLimiter } from '@utils/loginLimiter';
 // import globalErrorHandler from '@controllers/errorController';
@@ -41,7 +42,10 @@ dotenv.config({ path: './config.env' });
 // }
 
 const app = express();
-
+app.use((req, res, next) => {
+  console.log('hiiii');
+  next();
+});
 // 1) GLOBAL MIDDLEWARES
 
 // Set security HTTP headers
@@ -52,7 +56,7 @@ app.use(
 );
 
 // Implement CORS
-const whitelist = ['http://localhost:3000', 'http://127.0.0.1:3000'];
+const whitelist = ['http://localhost:8000', ' http://127.0.0.1:8000'];
 const corsOptions = {
   credentials: true, // allow coockies
   origin: (
