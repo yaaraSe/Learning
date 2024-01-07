@@ -13,7 +13,7 @@ import { IMutation } from '../Common/CommonInterfaces';
 
 export const axiosClient = axios.create({
   // baseURL: `${VITE_API_URL}/api/`,
-  baseURL: `http://localhost:3001/api/`,
+  baseURL: `http://localhost:4000/api/`,
 
   withCredentials: true,
 });

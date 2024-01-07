@@ -35,7 +35,7 @@ mongoose.set('strictQuery', true);
 // });
 
 // const port = NODE_ENV === 'development' ? PORT_DEV : PORT_PROD;
- const port = 3001;
+const port = 4000;
 const server = app.listen(port, () => {
   console.log('\x1b[32m', `App running on port ${port}...`);
   console.log(`NODE_ENV: ${NODE_ENV}`);
